@@ -1,0 +1,120 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.contactTitle {
+    position: relative;
+}
+
+.contactTitle h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.contactTitle img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contactSection {
+    display: flex;
+    gap: 150px;
+}
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactLeft h1 {
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(270deg,#DF8908, #BF15FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactLeft p {
+    max-width: 550px;
+    color: #D8D8D8;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D8D8D8;
+    font-size: 22px;
+}
+
+.contactDetail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactRight {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.contactRight label {
+    font-size: 22px;
+    font-weight: 500;
+    color: #D8D8D8;
+}
+
+.contactRight input {
+    border: none;
+    width: 700px;
+    height: 80px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.contactRight textarea {
+    border: none;
+    width: 670px;
+    padding: 25px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 20px;
+    resize: none;
+}
+
+.contactSubmit {
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#DF8908, #BF15FF);
+    font-size: 22px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+.contactSubmit:hover {
+    transform: scale(1.1);
+    border: 2px solid white;
+}

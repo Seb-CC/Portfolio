@@ -1,0 +1,65 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.projectsTitle {
+    position: relative;
+}
+
+.projectsTitle h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.projectsTitle img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.projectsContainer img {
+    box-sizing: border-box;
+    width: 420px;
+    height: 280px;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+.projectsContainer img:hover {
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    border-radius: 15px;
+    transition: 500ms ease;
+}
+
+.showMore {
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+.showMore:hover {
+    gap: 30px;
+    background: linear-gradient(270deg, #DF8908, #BF15FF);
+    transition: 500ms ease;
+}

@@ -1,0 +1,140 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+    position: relative
+}
+
+.navMenu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.navContact {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 800ms;
+    font-weight: 700;
+}
+
+.navContact:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 2px white;
+}
+
+.navMenu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    transition: width 500ms ease;
+}
+
+.navMenu li p {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+.navMenu li p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 500ms ease;
+    will-change: transform;
+}
+
+.navMenu li:hover p::after,
+.navMenu li:focus-within p::after,
+.navMenu li.active p::after {
+    transform: scaleX(1);
+}
+
+.navMenu li.mobOnly {
+    display: none;
+}
+
+.anchorLink {
+    text-decoration: none;
+    color: white;
+}
+
+.navMobclose{
+    display: none;
+}
+
+.navMobopen{
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .navContact {
+        display: none;
+    }
+
+    .navMobopen {
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+    .navMobclose {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+
+    .navMenu {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1F0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 500ms;
+        right: -350px;
+        left: auto;
+        transform: none;
+    }
+
+    .navMenu li.mobOnly {
+        display: flex;
+    }
+
+    .navMenu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    
+}
