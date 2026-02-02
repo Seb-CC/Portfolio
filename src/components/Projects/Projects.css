@@ -63,3 +63,34 @@
     background: linear-gradient(270deg, #DF8908, #BF15FF);
     transition: 500ms ease;
 }
+
+@media(max-width: 768px) {
+    .projects{
+        align-items: start;
+        gap: 50px;
+        margin: 50px 70px;
+    }
+    .projectsTitle h1{
+        font-size: 50px;
+        padding: 0;
+        font-weight: 600;
+    }
+    .projectsTitle img{
+        width: 130px;
+        margin-right: -20px;
+    }
+    .projectsContainer{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .projectsContainer img{
+        width: 100%;
+        height: 100%;
+    }
+    .projectsShowMore{
+        padding: 20px 40px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+}
